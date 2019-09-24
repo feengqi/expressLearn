@@ -1,9 +1,7 @@
 let express = require('express');
 let app = express();
 
-app.get('/', function(req, res) {
-  res.send('hello world');
-});
+app.get('/', (req, res) => res.send('hello world'));
 
 // app.use(express.static('public'));
 app.use('/static', express.static('public'));
